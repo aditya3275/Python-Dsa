@@ -1,0 +1,27 @@
+def factors_of_two(n):
+    res = []
+    for i in range(1, n + 1):
+        if n % i == 0:
+            res.append(i)
+    return res
+
+
+def gcd(n, m):
+    com = []
+    max_res = 0
+    arr1 = factors_of_two(n)
+    arr2 = factors_of_two(m)
+    for i in range(len(arr1)):
+        if arr1[i] in arr2:
+            com.append(arr1[i])
+
+    max_res = max(com)
+
+    return max_res
+
+
+if __name__ == "__main__":
+    n = int(input())
+    m = int(input())
+
+    print(gcd(n, m))

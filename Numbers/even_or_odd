@@ -1,0 +1,15 @@
+def even_or_odd(n):
+  if n < 0:
+    return False
+
+  if n % 2 == 0:
+    return True
+  return False
+
+if __name__ == "__main__":
+  n = int(input())
+
+  if even_or_odd(n):
+    print("even")
+  else:
+    print("odd")

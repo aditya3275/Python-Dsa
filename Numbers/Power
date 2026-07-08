@@ -1,0 +1,13 @@
+def power(x, n):
+    if n == 0:
+        return n
+    if n != 0:
+        res = n**x
+    return res
+
+
+if __name__ == "__main__":
+    n = int(input())
+    x = int(input())
+
+    print(power(x, n))

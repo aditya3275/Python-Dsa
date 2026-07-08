@@ -1,0 +1,16 @@
+def prime_num(n):
+    if n < 2:
+        return False
+
+    for i in range(2, int(n**0.5) + 1):
+        if i % 2 == 0:
+            print("not prime")
+
+        else:
+            print("prime")
+
+
+if __name__ == "__main__":
+    n = int(input())
+
+    ans = prime_num(n)

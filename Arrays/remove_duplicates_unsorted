@@ -1,0 +1,15 @@
+def remdups_unsorted():
+  arr = list(map(int,input().split()))
+
+  freq = {}
+  res = []
+
+  for i in arr:
+    if i not in freq:
+      res.append(i)
+      freq[i] = True
+
+  print(res)
+
+remdups_unsorted()
+

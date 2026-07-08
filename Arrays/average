@@ -1,0 +1,7 @@
+def avg():
+  arr = list(map(int,input().split()))
+
+  average = sum(arr) / len(arr)
+
+  print(round(average,1))
+avg()

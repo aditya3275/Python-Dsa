@@ -1,0 +1,19 @@
+def palin(n):
+    original_num = n
+    rev = 0
+
+    while n > 0:
+        digit = n % 10
+        rev = rev * 10 + digit
+        n //= 10
+
+    return rev == original_num
+
+
+if __name__ == "__main__":
+    n = int(input())
+
+    if palin(n):
+        print("yes its a palindrome")
+    else:
+        print("not a palindrome")

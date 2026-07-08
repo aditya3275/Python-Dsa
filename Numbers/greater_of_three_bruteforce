@@ -1,0 +1,9 @@
+def greater_of_three(a, b, c):  # brute force
+    max_num = max(a, b, c)
+    return max_num
+
+
+if __name__ == "__main__":
+    a, b, c = map(float, input().split())
+
+    print(greater_of_three(a, b, c))

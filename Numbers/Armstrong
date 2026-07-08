@@ -1,0 +1,19 @@
+def is_armstrong(n):
+    digit = len(str(n))
+    original = n
+
+    total = 0
+    while n > 0:
+        last = n % 10
+        total += last**digit
+        n //= 10
+
+    return total == original
+
+
+if __name__ == "__main__":
+    n = int(input())
+    if is_armstrong(n):
+        print(True)
+    else:
+        print(False)

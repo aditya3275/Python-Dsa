@@ -1,0 +1,12 @@
+def median():
+    arr = list(map(int, input().split()))
+    arr.sort()
+    n = len(arr)
+    if n % 2 == 1:
+        med = arr[n // 2]
+    elif n % 2 == 0:
+        med = (arr[n // 2 - 1] + arr[n // 2]) / 2
+    print(med)
+
+
+median()

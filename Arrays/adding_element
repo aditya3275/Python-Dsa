@@ -1,0 +1,9 @@
+def adding_elements():
+  arr = list(map(int,input().split()))
+  k = int(input("enter the number u would like to insert:"))
+
+  pos = int(input("enter the position, u would want ur number to be:"))
+
+  arr.insert(pos,k)
+  print(arr)
+adding_elements()

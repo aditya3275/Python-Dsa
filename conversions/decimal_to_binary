@@ -1,0 +1,8 @@
+def dec_to_bin(n):
+    binary = bin(n)
+    return binary
+
+
+if __name__ == "__main__":
+    n = int(input())
+    print(dec_to_bin(n)[2:])

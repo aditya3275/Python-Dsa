@@ -1,0 +1,17 @@
+def symmetric():
+    n = int(input())
+
+    pairs = []
+    for _ in range(n):
+        a, b = map(int, input().split())
+        pairs.append((a, b))
+
+    hash = {}
+    for a, b in pairs:
+        if (b, a) in hash:
+            print((a, b))
+        else:
+            hash[a, b] = True
+
+
+symmetric()

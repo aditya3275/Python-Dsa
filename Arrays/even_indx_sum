@@ -1,0 +1,10 @@
+def even_index():
+  arr = list(map(int,input().split()))
+  total = 0
+  for i in range(len(arr)):
+    if i % 2 == 1:
+      continue
+    else:
+      total += arr[i]
+  print(total)
+even_index()

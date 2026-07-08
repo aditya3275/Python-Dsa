@@ -1,0 +1,11 @@
+def search_array():
+    arr = list(map(int, input().split()))
+    k = int(input())
+
+    for i in range(len(arr)):
+        if arr[i] == k:
+            pos = i
+            print(pos)
+
+
+search_array()

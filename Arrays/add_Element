@@ -1,0 +1,20 @@
+def add_element():
+    arr = list(map(int, input().split()))
+    choice = input("enter a position(start,specific,end):")
+    k = int(input("enter the number u would like to insert:"))
+
+    # start
+    if choice == "start":
+        arr.insert(0, k)
+    elif choice == "end":
+        arr.append(k)
+    elif choice == "specific":
+        arr.insert(int(input("enter the position, where u want to insert:")), k)
+
+    else:
+        print("invalid choice")
+
+    print(arr)
+
+
+add_element()

@@ -1,0 +1,16 @@
+def removdups():
+  arr = list(map(int,input().split()))
+  freq = {}
+
+  for i in arr:
+    freq[i] = freq.get(i,0) + 1
+
+  ar = list(freq.keys())
+
+  print(ar)
+
+
+
+
+
+removdups()

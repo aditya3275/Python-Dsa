@@ -1,0 +1,16 @@
+def dec_to_bin_togg(n):
+    binary = bin(n)[2:]
+    toggled = ""
+    for bit in binary:
+        if bit == "0":
+            toggled += "1"
+        else:
+            toggled += "0"
+
+    decimal = int(toggled, 2)
+    return decimal
+
+
+if __name__ == "__main__":
+    n = int(input())
+    print(dec_to_bin_togg(n))

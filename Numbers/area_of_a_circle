@@ -1,0 +1,11 @@
+import math
+
+
+def area_of_circle(n):
+    c = math.pi * int(n**2)
+    return round(c, 1)
+
+
+if __name__ == "__main__":
+    n = int(input())
+    print(area_of_circle(n))

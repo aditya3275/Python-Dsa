@@ -1,0 +1,13 @@
+def sum_of_digits_in_range(l, r):
+    sum = 0
+    for i in range(l, r + 1):
+        sum += i
+
+    return sum
+
+
+if __name__ == "__main__":
+    l = int(input())
+    r = int(input())
+
+    print(sum_of_digits_in_range(l, r))

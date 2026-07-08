@@ -1,0 +1,17 @@
+def incre_and_decre():
+    arr = list(map(int, input().split()))
+
+    sorted_arr = sorted(arr)
+
+    p = len(sorted_arr) // 2
+    q = len(sorted_arr) - 1
+
+    while p < q:
+        sorted_arr[p], sorted_arr[q] = sorted_arr[q], sorted_arr[p]
+        p += 1
+        q -= 1
+
+    print(sorted_arr)
+
+
+incre_and_decre()

@@ -1,0 +1,32 @@
+def addin_frac(a, b, c, d):
+    nr = (a * d) + (c * b)
+    dr = b * d
+    k = gcdd(nr, dr)
+
+    nr = nr // k
+    dr = dr // k
+
+    print(nr, "/", dr)
+
+
+def gcdd(nr, dr):
+    while nr > 0 and dr > 0:
+        if nr > dr:
+            nr = nr % dr
+        elif dr > nr:
+            dr = dr % nr
+        else:
+            return nr
+
+    if nr == 0:
+        return dr
+    return nr
+
+
+if __name__ == "__main__":
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    d = int(input())
+
+    addin_frac(a, b, c, d)

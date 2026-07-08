@@ -1,0 +1,13 @@
+def sum_of_ap(a,d,n):
+  total = 0
+  for i in range(n):
+    total += a + i * d
+
+  return total
+
+if __name__ == "__main__":
+  a,d,n = map(int,input().split())
+
+  print(sum_of_ap(a,d,n))
+
+

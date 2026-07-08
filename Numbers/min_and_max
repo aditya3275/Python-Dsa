@@ -1,0 +1,25 @@
+def min_and_max(n):
+    large = 0
+    small = 9
+    if n == 0:
+        return 0, 0
+    while n > 0:
+        digit = n % 10
+        if digit > large:
+            large = digit
+
+        elif digit < small:
+            small = digit
+
+        n //= 10
+
+    return large, small
+
+
+if __name__ == "__main__":
+    n = int(input())
+
+    largest, smallest = min_and_max(n)
+
+    print(f"largest element is {largest}")
+    print(f"smallest element is {smallest}")

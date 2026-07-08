@@ -1,0 +1,17 @@
+def freq_sort():
+    arr = list(map(int, input().split()))
+    freq = {}
+
+    for i in arr:
+        freq[i] = freq.get(i, 0) + 1
+
+    vec = list(freq.items())
+    vec.sort(key=lambda x: x[1], reverse=True)
+
+    res = []
+    for element, count in vec:
+        res.extend([element] * count)
+    print(res)
+
+
+freq_sort()

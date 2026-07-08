@@ -1,0 +1,22 @@
+def dutch(arr):
+    freq = {}
+
+    for i in arr:
+        freq[i] = freq.get(i, 0) + 1
+    s = []
+    for key, values in sorted(freq.items()):
+        for _ in range(values):
+            s.append(key)
+
+    return s
+
+
+if __name__ == "__main__":
+    n = int(input())
+    arr = []
+
+    for _ in range(n):
+        arr.append(int(input()))
+
+
+print(*dutch(arr))

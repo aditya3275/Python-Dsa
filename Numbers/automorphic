@@ -1,0 +1,18 @@
+def automorphic(n):
+    res = n * n
+    while n > 0:
+        if res % 10 == n % 10:
+            res //= 10
+            n //= 10
+        else:
+            return False
+    return True
+
+
+if __name__ == "__main__":
+    n = int(input())
+
+    if automorphic(n):
+        print(f"{n} is an automorphic number")
+    else:
+        print(f"{n} is not an automorphic number")

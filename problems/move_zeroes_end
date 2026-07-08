@@ -1,0 +1,17 @@
+def choc(arr):
+    n = len(arr)
+    non_zero = []
+    z = []
+    for i in range(n):
+        if arr[i] == 0:
+            z.append(arr[i])
+        else:
+            non_zero.append(arr[i])
+
+    new_arr = non_zero + z
+    return new_arr
+
+
+if __name__ == "__main__":
+    arr = list(map(int, input().split()))
+    print(*choc(arr))

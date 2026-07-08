@@ -1,0 +1,19 @@
+def max_product():
+  arr = list(map(int,input().split()))
+  prev_min = arr[0]
+  prev_max = arr[0]
+  ans = arr[0]
+
+  for i in range(1,len(arr)):
+    nums = arr[i]
+
+    temp_max = max(nums,nums*prev_min,nums*prev_max)
+    temp_min = min(nums,nums*prev_max,nums*prev_min)
+
+    prev_max = temp_max
+    prev_min = temp_min
+
+    ans = max(ans, prev_max)
+  print(ans)
+max_product()
+

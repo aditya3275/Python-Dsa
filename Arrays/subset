@@ -1,0 +1,13 @@
+def subset():
+    arr1 = list(map(int, input().split()))
+    arr2 = list(map(int, input().split()))
+
+    s = set(arr2)
+
+    for i in arr1:
+        if i not in s:
+            print("false")
+    print("subset")
+
+
+subset()

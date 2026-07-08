@@ -1,0 +1,8 @@
+def formula_of_Ap(a, d, n):
+    return n * (2 * a + (n - 1) * d) // 2
+
+
+if __name__ == "__main__":
+    a, d, n = map(int, input().split())
+
+    print(formula_of_Ap(a, d, n))

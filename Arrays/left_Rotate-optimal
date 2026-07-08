@@ -1,0 +1,23 @@
+arr = list(map(int, input().split()))
+k = int(input())
+
+
+def rev(arr, p, q):
+    while p < q:
+        arr[p], arr[q] = arr[q], arr[p]
+        p += 1
+        q -= 1
+
+
+def rev_trick(arr, k):
+    n = len(arr)
+    k %= n
+
+    rev(arr, 0, n - 1)
+    rev(arr, 0, k - 1)
+    rev(arr, k, n - 1)
+
+    print(arr)
+
+
+rev_trick(arr, k)

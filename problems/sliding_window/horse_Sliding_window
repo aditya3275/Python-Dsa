@@ -1,0 +1,23 @@
+def horse_slidin_window(n, k, arr):
+    p = 0
+    ans = 0
+    total = 0
+
+    for q in range(len(arr)):
+        total += arr[q]
+
+        while total > k or total == k:
+            total -= arr[p]
+            p += 1
+
+        ans = max(ans, q - p + 1)
+
+    return ans
+
+
+if __name__ == "__main__":
+    n, k = map(int, input().split())
+
+    arr = list(map(int, input().split()))
+
+    print(horse_slidin_window(n, k, arr))

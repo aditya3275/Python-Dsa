@@ -1,0 +1,28 @@
+def gcd_then_lcm(a, b):
+
+    while a > 0 and b > 0:
+        if a > b:
+            a = a % b
+        elif b > a:
+            b = b % a
+        elif a == b:
+            return a
+
+    if a == 0:
+        return b
+
+    return a
+
+
+def the_lcm(a, b):
+    ans = a * b
+    lcm = ans // gcd_then_lcm(a, b)
+
+    return lcm
+
+
+if __name__ == "__main__":
+    a = int(input())
+    b = int(input())
+
+    print(the_lcm(a, b))

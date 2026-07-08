@@ -1,0 +1,8 @@
+def bin_to_oct(n):
+    octal = oct(int(n, 2))
+    return octal
+
+
+if __name__ == "__main__":
+    n = input()
+    print(bin_to_oct(n)[2:])

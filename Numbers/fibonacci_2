@@ -1,0 +1,25 @@
+def fibonacci(n):
+  a = 0
+  b = 1
+
+  while a < n:
+    next = a + b
+    a = b
+    b = next
+
+  if a == n:
+    return True
+  else:
+    return False
+
+
+
+if __name__ == "__main__":
+  n = int(input())
+
+  if fibonacci(n):
+    print("yes")
+  else:
+    print("no")
+
+

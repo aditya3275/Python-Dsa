@@ -1,0 +1,7 @@
+def reverse():
+  arr = list(map(int,input().split()))
+
+  rev = arr[::-1]
+
+  print(rev)
+reverse()

@@ -1,0 +1,14 @@
+def rev_num(n):
+    rev = 0
+    while n > 0:
+        last_digit = n % 10
+        rev = rev * 10 + last_digit
+        n //= 10
+
+    return rev
+
+
+if __name__ == "__main__":
+    n = int(input())
+
+    print(rev_num(n))

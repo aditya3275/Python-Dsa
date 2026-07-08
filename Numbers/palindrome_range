@@ -1,0 +1,23 @@
+def is_palindrome(n):
+  original = n
+  rev = 0
+
+  while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n //= 10
+
+  if rev == original:
+    return True
+def palindrome_range(min_p, max_p):
+  for i in range(min_p,max_p + 1):
+    if is_palindrome(i):
+      print(i,end=" ")
+
+if __name__ == "__main__":
+  #n = int(input())
+  min_p = int(input())
+  max_p = int(input())
+
+  ans = palindrome_range(min_p,max_p)
+  ans

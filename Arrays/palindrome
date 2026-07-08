@@ -1,0 +1,17 @@
+def palindrome():
+  arr = list(map(int,input()))
+  p = 0
+  q = len(arr) - 1
+
+  while p < q:
+    if arr[p] != arr[q]:
+      print("not a palindrome")
+      return
+
+    p += 1
+    q -= 1
+  print("yes its a palindrome")
+
+
+
+palindrome()

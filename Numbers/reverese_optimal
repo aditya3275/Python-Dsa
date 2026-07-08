@@ -1,0 +1,15 @@
+def rev():
+    arr = list(map(int, input().split()))
+
+    p = 0
+    q = len(arr) - 1
+
+    while p < q:
+        arr[p], arr[q] = arr[q], arr[p]
+        p += 1
+        q -= 1
+
+    print(arr)
+
+
+rev()

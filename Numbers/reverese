@@ -1,0 +1,10 @@
+def reverse_digits():
+  n = int(input())
+  rev = 0
+  while n > 0:
+
+    last_dig = n % 10
+    rev = rev * 10 + last_dig
+    n //= 10
+  print(rev)
+reverse_digits()

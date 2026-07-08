@@ -1,0 +1,25 @@
+def change_zeroes_to_ones(n):
+    if n == 0:
+        return 1
+
+    rev = 0
+    while n > 0:
+        digit = n % 10
+        if digit == 0:
+            digit = 1
+        rev = rev * 10 + digit
+        n //= 10
+
+    res = 0
+    while rev > 0:
+        last = rev % 10
+        res = res * 10 + last
+        rev //= 10
+
+    return res
+
+
+if __name__ == "__main__":
+    n = int(input())
+
+    print(change_zeroes_to_ones(n))

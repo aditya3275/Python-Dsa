@@ -1,0 +1,10 @@
+def left_rotate_array():
+  arr = list(map(int,input().split()))
+  k = int(input())
+
+  n = len(arr)
+  k %= n
+  new_arr = arr[k:] + arr[:k]
+
+  print(new_arr)
+left_rotate_arrayrotate_array()

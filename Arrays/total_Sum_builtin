@@ -1,0 +1,7 @@
+def sum_elem():
+  arr = list(map(int,input().split()))
+
+  total = sum(arr)
+
+  print(total)
+sum_elem()

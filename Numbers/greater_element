@@ -1,0 +1,15 @@
+def greater_element(a, b):
+    if a > b:
+        return True
+    else:
+        return False
+
+
+if __name__ == "__main__":
+    a = float(input())
+    b = float(input())
+
+    if greater_element(a, b):
+        print(f"{a} is greater than the other")
+    else:
+        print(f"{b} is greater than the other ")

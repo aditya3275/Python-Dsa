@@ -1,0 +1,8 @@
+def bin_to_dec(n):
+    decimal = int(n, 2)
+    return decimal
+
+
+if __name__ == "__main__":
+    n = input()
+    print(bin_to_dec(n))
